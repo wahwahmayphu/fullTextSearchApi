@@ -19,15 +19,29 @@ H2 Database (or any other database configured in application.properties
 Create a New Article
 
 Method: POST
-URL: http://localhost:8080/api/articles
+URL: http://localhost:8080/api/articles/createArticle
 Body: Select "raw" and "JSON (application/json)," then enter the JSON data for a new article.
 For example:
 
 {
-  "title": "Sample Article",
-  "author": "John Doe",
-  "content": "This is a sample article content.",
-  "publicationDate": "2023-12-25",
-  "category": "Sample Category",
-  "keywords": "sample, article"
+    "id": "278d15f3-c06d-4c94-9330-48d7e94dfd3b",
+    "title": "Java Programming",
+    "author": "Java Enthusiast",
+    "content": "Exploring the world of Java programming.",
+    "publicationDate": "2023-12-24",
+    "category": "Programming",
+    "keywords": "Java, Programming "
+}
+
+Method: GET
+URL : http://localhost:8080/api/articles/search?searchText=java
+
+{
+    "id": "278d15f3-c06d-4c94-9330-48d7e94dfd3b",
+    "title": "Java Programming",
+    "author": "Java Enthusiast",
+    "content": "Exploring the world of Java programming.",
+    "publicationDate": "2023-12-24",
+    "category": "Programming",
+    "keywords": "Java, Programming "
 }
