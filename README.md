@@ -13,5 +13,21 @@ Prerequisites
 
 Java 17 or higher
 Maven
-H2 Database (or any other database configured in application.properties)
+H2 Database (or any other database configured in application.properties
 
+
+Create a New Article
+
+Method: POST
+URL: http://localhost:8080/api/articles
+Body: Select "raw" and "JSON (application/json)," then enter the JSON data for a new article.
+For example:
+
+{
+  "title": "Sample Article",
+  "author": "John Doe",
+  "content": "This is a sample article content.",
+  "publicationDate": "2023-12-25",
+  "category": "Sample Category",
+  "keywords": "sample, article"
+}
