@@ -24,7 +24,6 @@ Body: Select "raw" and "JSON (application/json)," then enter the JSON data for a
 For example:
 
 {
-    "id": "278d15f3-c06d-4c94-9330-48d7e94dfd3b",
     "title": "Java Programming",
     "author": "Java Enthusiast",
     "content": "Exploring the world of Java programming.",
